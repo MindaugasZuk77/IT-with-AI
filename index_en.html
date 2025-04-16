@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional IT services for small and medium businesses. Web development, optimization, and IT business development consulting."
+    />
+    <meta
+      name="keywords"
+      content="IT services, web development, optimization, business consulting"
+    />
+    <meta name="author" content="Your Name" />
+    <title>IT with AI</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Fixed navigation bar -->
+    <header>
+      <div class="logo">
+        <a href="#home">
+          <img src="logo-7.png" alt="IT with AI Logo" />
+        </a>
+      </div>
+      
+        <nav>
+          <ul id="nav-links" class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- Language switcher for small screens -->
+            <li class="language-switcher-mobile">
+              <a href="index_lt.html">LT</a> / <a href="index_en.html">EN</a>
+            </li>
+            
+          </ul>
+          <div class="language-switcher">
+            <a href="index_lt.html">LT</a> /
+            <a href="index_en.html">EN</a>
+          </div>
+          
+          
+          <script>
+            function switchLanguage(lang) {
+              // Save the selected language in localStorage
+              localStorage.setItem('language', lang);
+          
+              // Redirect to the appropriate page
+              if (lang === 'lt') {
+                window.location.href = 'index_lt.html';
+              } else {
+                window.location.href = 'index_en.html';
+              }
+            }
+          </script>
+          
+          
+          <!-- Hamburger Menu -->
+          <div id="hamburger" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Innovative IT solutions for your business</h1>
+        <p>
+          We create high-quality, optimized websites and offer IT consultations to help your business grow and achieve its goals.
+        </p>
+        <button class="cta-btn" id="contact-modal-btn">
+          Contact us now
+        </button>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="service-cards">
+          <div class="service-item">
+            <h3>Web development and maintenance</h3>
+            <p>
+              We create professional, optimized and fast websites tailored to your business goals. We maintain websites to ensure they are always relevant and functional. We also offer web application development services to expand your business opportunities online.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Database Integration</h3>
+            <p>
+              Simplify your data management by integrating advanced database systems. Ensure all data is easily accessible and manageable, regardless of the system you use.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>IT Consulting</h3>
+            <p>
+              We help you choose the best IT solutions for your business growth. Our consulting services will help optimize your business processes, increase efficiency and apply technology to achieve your goals.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>SEO Optimization</h3>
+            <p>
+              We optimize your website for search engines to achieve higher rankings in Google results. Our SEO strategies help attract more organic visitors and increase sales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About</h2>
+            <p>
+              I am an IT specialist with over a decade of experience in business development and technological solutions. Having acquired new Full Stack programming skills, I now successfully apply them in creating modern web solutions.<br>
+
+              My strength lies in the ability to combine a solid technical foundation with business strategy, allowing me to understand and solve problems from various perspectives. I develop advanced IT solutions that not only optimize processes, but also help businesses grow and achieve long-term goals.<br>
+              
+              By working with you, I aim not only for efficiency but also for innovation, using modern technologies for your business success.
+            </p>
+          </div>
+          <!-- <div class="about-image">
+            <img src="team_image.png" alt="IT Specialist Photo" />
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+          <div class="project">
+            <img src="photografer.png" alt="Photography Portfolio Website design" />
+            <div class="project-description">
+              <h4>Photography Portfolio Website</h4>
+              <p>Description: This project was created for a photographer seeking to showcase their work in a modern and attractive website. The site allows easy addition, management and viewing of photos in various gallery formats.</p>
+              <p><strong>Technologies:</strong> HTML, CSS, JavaScript.</p>
+              <p><strong>Highlights:</strong><br> 
+                - Photo galleries with interactive hover effects.<br>
+                - Responsive design, suitable for both mobile devices and desktops.
+              </p>
+            </div>
+          </div>
+          
+         
+          <div class="project">
+            <img src="music_album.png" alt="Music Album Database design" />
+            <div class="project-description">
+              <h4>Music Album Database</h4>
+              <p>Description: A project created to manage a database of music albums and artists. Users can search and filter albums by genre, artist or year. The website demonstrates server and database management using Python, SQL and Flask</p>
+              <p><strong>Technologies:</strong> Python, Flask, SQL, HTML, CSS, JavaScript.</p>
+              <p><strong>Highlights:</strong><br> 
+               - Use of Python and SQL for database management.<br>
+               - Album filtering and search functions.<br>
+               - Dynamic content rendering.
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="kasimo_darbai.png" alt="Excavation Services Website design" />
+            <div class="project-description">
+              <h4>Excavation Services Website</h4>
+              <p>Description: A website designed to showcase excavation services with a tractor. The site highlights the services offered, provides pricing and includes contact information. The site is optimized to attract local clients and improve SEO rankings.</p>
+              <p><strong>Technologies:</strong> HTML, CSS, JavaScript, SEO optimization.</p>
+              <p><strong>Highlights:</strong><br> 
+               - Localized SEO optimization to improve site visibility in search engines.<br>
+               - Clear presentation of services, including interactive pricing tables.<br>
+               - Attractive design and user-friendly navigation.
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="calculator.png" alt="Calculator design" />
+            <div class="project-description">
+              <h4>Calculator</h4>
+              <p>Description: This calculator was built using JavaScript to perform basic arithmetic calculations. The project demonstrates the capabilities of JavaScript in creating interactive applications and real-time data processing.</p>
+              <p><strong>Technologies:</strong> HTML, CSS, JavaScript.</p>
+              <p><strong>Highlights:</strong><br> 
+               - Simple and easy-to-use user interface.<br>
+               - Real-time calculations using JavaScript.<br>
+               - A modern UX/UI design, focused on user-friendliness.
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+          
+          <a href="https://www.linkedin.com/in/mindaugas-zukauskas-06628b16/" target="_blank">LinkedIn</a>
+          
+        </div>
+
+          <!-- Contact Form (English version) -->
+          <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="tel" name="phone" placeholder="Phone" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+            <p id="form-result"></p> <!-- Čia bus rodomas rezultatas -->
+          </form>
+
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-div">
+        <p>&copy; 2024 IT with AI. All rights reserved.</p>
+        <!-- <p>Email: <a href="mailto:info@itwithai.com">info@itwithai.com</a></p> -->
+        <!-- <p>Phone: +370 600 00000</p> -->
+      </div>
+    </footer>
+    
+    <!-- Modal -->
+    <div id="contact-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Contact us now</h2>
+        <button class="cta-btn">Send Request</button>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

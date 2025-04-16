@@ -1,0 +1,28 @@
+# IDE ir redaktorių failai
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sisteminiai failai
+.DS_Store
+Thumbs.db
+
+# Laikini failai
+*.log
+*.tmp
+*.temp
+
+# Priklausomybės
+node_modules/
+vendor/
+
+# Konfigūracijos failai su slaptažodžiais
+config.php
+.env
+*.env
+
+# Kompiliuoti failai
+*.min.js
+*.min.css
+*.map 

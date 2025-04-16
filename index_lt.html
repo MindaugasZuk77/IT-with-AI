@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Profesionalios IT paslaugos smulkiam ir vidutiniam verslui. Web svetainių kūrimas, optimizacija, IT verslo plėtros konsultacijos."
+    />
+    <meta
+      name="keywords"
+      content="IT paslaugos, web kūrimas, optimizacija, verslo konsultacijos"
+    />
+    <meta name="author" content="Tavo Vardas" />
+    <title>IT with AI </title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Fixed navigation bar -->
+    <header>
+      <div class="logo">
+        <a href="#home">
+          <img src="logo-7.png" alt="IT with AI Logo" />
+        </a>
+      </div>
+      
+        <nav>
+          <ul id="nav-links" class="nav-links">
+            <li><a href="#home">Pradžia</a></li>
+            <li><a href="#services">Paslaugos</a></li>
+            <li><a href="#about">Apie</a></li>
+            <li><a href="#portfolio">Portfelis</a></li>
+            <li><a href="#contact">Kontaktai</a></li>
+            <!-- Kalbų perjungiklis rodomas mažiems ekranams -->
+            <li class="language-switcher-mobile">
+              <a href="index_lt.html">LT</a> / <a href="index_en.html">EN</a>
+            </li>
+            
+          </ul>
+          <div class="language-switcher">
+            <a href="index_lt.html">LT</a> /
+            <a href="index_en.html">EN</a>
+          </div>
+          
+          
+          <script>
+            function switchLanguage(lang) {
+              // Save the selected language in localStorage
+              localStorage.setItem('language', lang);
+          
+              // Redirect to the appropriate page
+              if (lang === 'lt') {
+                window.location.href = 'index_lt.html';
+              } else {
+                window.location.href = 'index_en.html';
+              }
+            }
+          </script>
+          
+          
+          <!-- Hamburger Menu -->
+          <div id="hamburger" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Inovatyvios IT sprendimų galimybės jūsų verslui</h1>
+        <p>
+          Kuriame aukštos kokybės, optimizuotas svetaines ir siūlome IT konsultacijas, kad padėtume jūsų verslui augti bei pasiekti savo tikslus.
+        </p>
+        <button class="cta-btn" id="contact-modal-btn">
+          Susisiekite dabar
+        </button>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Paslaugos</h2>
+        <div class="service-cards">
+          <div class="service-item">
+            <h3>Web svetainių kūrimas ir priežiūra</h3>
+            <p>
+              Sukuriame profesionalias, optimizuotas ir greitas svetaines, pritaikytas jūsų verslo tikslams. Palaikome svetaines, kad jos visada būtų aktualios ir funkcionalios. Teikiame web aplikacijų kūrimo paslaugas, kurios padės išplėsti jūsų verslo galimybes internete.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Integracija su duomenų bazėmis</h3>
+            <p>
+              Supaprastinkite savo duomenų valdymą integruodami pažangias duomenų bazių sistemas. Užtikrinkite, kad visi duomenys būtų lengvai pasiekiami ir tvarkomi, nesvarbu, kokią sistemą naudojate.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>IT konsultacijos</h3>
+            <p>
+              Padedame pasirinkti tinkamiausius IT sprendimus jūsų verslo augimui. Mūsų konsultacijos padės optimizuoti jūsų verslo procesus, didinti efektyvumą ir pritaikyti technologijas jūsų tikslams
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>SEO optimizacija</h3>
+            <p>
+              Optimizuojame jūsų svetainę paieškos sistemoms, kad ji užimtų aukštesnes pozicijas „Google“ rezultatuose. Mūsų SEO strategijos padeda pritraukti daugiau organinių lankytojų ir didinti pardavimus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Apie</h2>
+            <p>
+              Esu IT specialistas, turintis daugiau nei dešimtmetį patirties verslo plėtros ir technologinių sprendimų srityje. Įgijęs naujų Full Stack programavimo įgūdžių, juos sėkmingai taikau šiuolaikinių interneto sprendimų kūrime.<br>
+
+              Mano stiprybė – gebėjimas derinti techninį žinių pagrindą su verslo strategija, leidžiantis suprasti ir spręsti problemas iš įvairių perspektyvų. Kuriu pažangius IT sprendimus, kurie ne tik optimizuoja procesus, bet ir padeda verslui augti bei siekti ilgalaikių tikslų.<br>
+              
+              Dirbdamas su jumis, siekiu ne tik efektyvumo, bet ir inovatyvumo, naudojant šiuolaikines technologijas jūsų verslo sėkmei.
+            </p>
+          </div>
+          <!-- <div class="about-image">
+            <img src="Apie_komanda.png" alt="IT Specialisto nuotrauka" />
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+          <div class="project">
+            <img src="photografer.png" alt="Fotografo portfolio svetainės dizainas" />
+            <div class="project-description">
+              <h4>Fotografijos Portfolio Svetainė</h4>
+              <p>Aprašymas: Šis projektas sukurtas fotografui, siekiančiam demonstruoti savo darbus modernioje, patrauklioje svetainėje. Svetainė leidžia lengvai pridėti, valdyti ir peržiūrėti nuotraukas įvairiuose galerijos formatuose.</p>
+              <p><strong>Technologijos:</strong> HTML, CSS, JavaScript.</p>
+              <p><strong>Akcentai:</strong><br> 
+                - Nuotraukų galerijos su interaktyviais efektais užvedus pelę.<br>
+                - Responsyvus dizainas, pritaikytas tiek mobiliesiems įrenginiams, tiek staliniams kompiuteriams.
+              </p>
+            </div>
+          </div>
+          
+          <div class="project">
+            <img src="music_album.png" alt="Music albums" />
+            <div class="project-description">
+              <h4>Muzikos albumų duombazė</h4>
+              <p>Aprašymas: Projektas skirtas muzikos albumų ir atlikėjų duomenų bazei valdyti. Vartotojai gali ieškoti ir filtruoti albumus pagal žanrą, atlikėją ar metus. Svetainė demonstruoja serverio ir duomenų bazės valdymą naudojant Python bei SQL.</p>
+              <p><strong>Technologijos:</strong> Python, SQL,Flask, HTML, CSS, JavaScript.</p>
+              <p><strong>Akcentai:</strong><br> 
+               - Python ir SQL naudojimas duomenų bazės valdymui.<br>
+               - Albumų filtravimas ir paieškos funkcijos.<br>
+               - Dinamiškas turinio atvaizdavimas.
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="kasimo_darbai.png" alt="Kasimo paslaugu dizainas" />
+            <div class="project-description">
+              <h4>Kasimo paslaugos svetainė</h4>
+              <p>Aprašymas: Svetainė, skirta demonstruoti kasimo su traktoriumi paslaugas. Pabrėžiamos siūlomos paslaugos, pateikiamos kainos ir informacija, kaip susisiekti su paslaugų teikėju. Svetainė optimizuota siekiant patraukti vietinius klientus ir pagerinti SEO rezultatus.</p>
+              <p><strong>Technologijos:</strong> HTML, CSS, JavaScript,Python, Flask, SEO optimizacija..</p>
+              <p><strong>Akcentai:</strong><br> 
+               - Lokalizuotas SEO optimizavimas, skirtas pagerinti svetainės matomumą paieškos sistemose. <br>
+               - Pateikta aiški informacija apie paslaugas, įskaitant interaktyvias kainų lenteles. <br>
+               - Patrauklus dizainas ir patogus vartotojui navigavimas.
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="calculator.png" alt="Calculator" />
+            <div class="project-description">
+              <h4>Skaičiuotuvas</h4>
+              <p>Aprašymas: Šis skaičiuotuvas sukurtas naudojant JavaScript, siekiant atlikti pagrindinius aritmetinius skaičiavimus. Projektas demonstruoja JavaScript galimybes kurti interaktyvias aplikacijas ir realaus laiko duomenų apdorojimą.</p>
+              <p><strong>Technologijos:</strong> HTML, CSS, JavaScript.</p>
+              <p><strong>Akcentai:</strong><br> 
+               - Paprasta ir lengvai naudojama vartotojo sąsaja. <br>
+               - JavaScript naudojimas skaičiavimams realiu laiku. <br>
+               - Pritaikytas modernus UX/UI dizainas, skirtas patogiam naudojimui.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Susisiekite</h2>
+        <div class="contact-info">
+          
+          <a href="https://www.linkedin.com/in/mindaugas-zukauskas-06628b16/" target="_blank">LinkedIn</a>
+        </div>
+
+        <!-- Contact Form -->
+          <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="tel" name="phone" placeholder="Phone" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+            <p id="form-result"></p> <!-- Čia bus rodomas rezultatas -->
+          </form>
+
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-div">
+        <p>&copy; 2024 IT with AI. Visos teisės saugomos.</p>
+        <p>El. paštas: <a href="mailto:info@itwithai.com">info@itwithai.com</a></p>
+        <p>Telefonas: +370 600 00000</p>
+      </div>
+    </footer>
+    
+
+    <!-- Modal -->
+    <div id="contact-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Susisiekite dabar</h2>
+        <p>Užpildykite formą, ir mes su Jumis susisieksime artimiausiu metu.</p>
+        <button class="cta-btn">Siųsti užklausą</button>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
