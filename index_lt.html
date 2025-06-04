@@ -12,7 +12,143 @@
       content="IT paslaugos, web kūrimas, optimizacija, verslo konsultacijos"
     />
     <meta name="author" content="Tavo Vardas" />
+    
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="IT with AI - Profesionalios IT paslaugos jūsų verslui" />
+    <meta property="og:description" content="Kuriame aukštos kokybės, optimizuotas svetaines ir siūlome IT konsultacijas, kad padėtume jūsų verslui augti bei pasiekti savo tikslus." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itwithai.lt/index_lt.html" />
+    <meta property="og:image" content="https://itwithai.lt/logo-7.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="IT with AI" />
+    <meta property="og:locale" content="lt_LT" />
+    <meta property="og:locale:alternate" content="en_US" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IT with AI - Profesionalios IT paslaugos jūsų verslui" />
+    <meta name="twitter:description" content="Kuriame aukštos kokybės, optimizuotas svetaines ir siūlome IT konsultacijas, kad padėtume jūsų verslui augti bei pasiekti savo tikslus." />
+    <meta name="twitter:image" content="https://itwithai.lt/logo-7.png" />
+    <meta name="twitter:site" content="@ITwithAI" />
+    <meta name="twitter:creator" content="@ITwithAI" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://itwithai.lt/index_lt.html" />
+    
+    <!-- Alternate Language Links -->
+    <link rel="alternate" hreflang="lt" href="https://itwithai.lt/index_lt.html" />
+    <link rel="alternate" hreflang="en" href="https://itwithai.lt/index_en.html" />
+    <link rel="alternate" hreflang="x-default" href="https://itwithai.lt/index_lt.html" />
+    
     <title>IT with AI </title>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "IT with AI",
+      "description": "Profesionalios IT paslaugos smulkiam ir vidutiniam verslui. Web svetainių kūrimas, optimizacija, IT verslo plėtros konsultacijos.",
+      "url": "https://itwithai.lt",
+      "logo": "https://itwithai.lt/logo-7.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "areaServed": "LT",
+        "availableLanguage": ["Lithuanian", "English"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "LT"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/mindaugas-zukauskas-06628b16/"
+      ],
+      "foundingDate": "2024",
+      "knowsAbout": [
+        "Web Development",
+        "IT Consulting",
+        "SEO Optimization",
+        "Database Integration",
+        "Full Stack Development"
+      ],
+      "serviceArea": {
+        "@type": "Country",
+        "name": "Lithuania"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "IT with AI",
+      "description": "Profesionalios IT paslaugos smulkiam ir vidutiniam verslui",
+      "url": "https://itwithai.lt",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://itwithai.lt/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": ["lt", "en"],
+      "copyrightYear": "2024",
+      "copyrightHolder": {
+        "@type": "Organization",
+        "name": "IT with AI"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Web svetainių kūrimas ir priežiūra",
+      "description": "Sukuriame profesionalias, optimizuotas ir greitas svetaines, pritaikytas jūsų verslo tikslams.",
+      "provider": {
+        "@type": "Organization",
+        "name": "IT with AI"
+      },
+      "areaServed": "Lithuania",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "IT Paslaugos",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Web svetainių kūrimas"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "SEO optimizacija"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "IT konsultacijos"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Duomenų bazių integracija"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
@@ -22,11 +158,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Skip to main content link for screen readers -->
+    <a href="#main-content" class="skip-link">Pereiti prie pagrindinio turinio</a>
+    
     <!-- Fixed navigation bar -->
     <header>
       <div class="logo">
         <a href="#home">
-          <img src="logo-7.png" alt="IT with AI Logo" />
+          <picture>
+            <source srcset="logo-7.webp 1x, logo-7@2x.webp 2x" type="image/webp">
+            <img 
+              src="logo-7.png" 
+              alt="IT with AI Logotipas" 
+              width="150"
+              height="50"
+            />
+          </picture>
         </a>
       </div>
       
@@ -36,6 +183,7 @@
             <li><a href="#services">Paslaugos</a></li>
             <li><a href="#about">Apie</a></li>
             <li><a href="#portfolio">Portfelis</a></li>
+            <li><a href="#domenai">Domenai</a></li>
             <li><a href="#contact">Kontaktai</a></li>
             <!-- Kalbų perjungiklis rodomas mažiems ekranams -->
             <li class="language-switcher-mobile">
@@ -65,7 +213,7 @@
           
           
           <!-- Hamburger Menu -->
-          <div id="hamburger" class="hamburger">
+          <div id="hamburger" class="hamburger" role="button" tabindex="0" aria-label="Atidaryti navigacijos meniu" aria-expanded="false" aria-controls="nav-links">
             <span></span>
             <span></span>
             <span></span>
@@ -75,8 +223,8 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-      <video autoplay muted loop id="hero-background-video">
+    <section id="home" class="hero" aria-label="Pagrindinė svetainės sekcija">
+      <video autoplay muted loop id="hero-background-video" aria-hidden="true">
         <source src="itwithAI_hero.mp4" type="video/mp4">
         <!-- Fallback paveikslas, jei naršyklė nepalaiko video -->
         Your browser does not support the video tag.
@@ -86,14 +234,15 @@
         <p>
           Kuriame aukštos kokybės, optimizuotas svetaines ir siūlome IT konsultacijas, kad padėtume jūsų verslui augti bei pasiekti savo tikslus.
         </p>
-        <button class="cta-btn" id="contact-modal-btn">
+        <button class="cta-btn" id="contact-modal-btn" aria-label="Susisiekti su mumis dabar">
           Susisiekite dabar
         </button>
       </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <main id="main-content">
+    <section id="services" class="services" aria-label="Mūsų teikiamos paslaugos">
       <div class="container">
         <h2>Paslaugos</h2>
         <div class="service-cards">
@@ -140,19 +289,116 @@
             </p>
           </div>
           <!-- <div class="about-image">
-            <img src="Apie_komanda.png" alt="IT Specialisto nuotrauka" />
+            <img src="Apie 16 9.png" alt="IT Specialisto nuotrauka" />
           </div> -->
         </div>
       </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio" aria-label="Mūsų projektų portfolio">
       <div class="container">
         <h2>Portfolio</h2>
-        <div class="gallery">
-          <div class="project">
-            <img src="photografer.png" alt="Fotografo portfolio svetainės dizainas" />
+        <div class="gallery" role="grid" aria-label="Projektų galerija">
+
+          <div class="project" role="gridcell" tabindex="0" aria-label="DomainRadar projektas - spustelėkite detalėms">
+            <picture>
+              <source srcset="domain_finder.webp 1x, domain_finder@2x.webp 2x" type="image/webp">
+              <img 
+                src="domain_finder.png" 
+                alt="DomainRadar - Domenų prieinamumo tikrintuvas" 
+                width="800"
+                height="450"
+                loading="lazy"
+                class="project-image"
+              />
+            </picture>
+            <div class="project-description">
+              <h4>DomainRadar - Domenų prieinamumo tikrintuvas</h4>
+              <p>Aprašymas: Tai yra pažangus domenų prieinamumo tikrinimo sprendimas, sukurtas naudojant React 18, TypeScript ir Node.js technologijas. Sistema leidžia patikrinti domenų prieinamumą, gauti išmaniuosius alternatyvų pasiūlymus bei stebėti technologijų naujienas. Projektas yra pilnai parengtas produkcijai ir sėkmingai išdiegtas Hostinger VPS serveryje su Nginx ir PM2 konfigūracija.</p>
+              <p><strong>Technologijos:</strong> React 18, TypeScript, Node.js, Express.js, Vite, Tailwind CSS, Nginx, PM2, Let's Encrypt SSL, Google Analytics 4, Zod, Pino.</p>
+              <p><strong>Pagrindinės savybės:</strong><br> 
+                - Tikslus domenų tikrinimas su 100% tikslumu naudojant WHOIS protokolą.<br>
+                - Išmanieji alternatyvių domenų pasiūlymai ir rekomendacijos.<br>
+                - Pilni WHOIS duomenys (registratorius, registracijos/galiojimo datos).<br>
+                - Technologijų naujienų integracija realiu laiku.<br>
+                - Šiuolaikiškas, atsparus dizainas su sklandžiais animacijomis.<br>
+                - SEO optimizuotas turinys ir strukturuoti duomenys.<br>
+                - Automatizuoti diegimo skriptai su PM2 proceso valdymu.<br>
+                - Išsami Google Analytics atsekamoji sistema.<br>
+                - SSL sertifikato automatinis nustatymas su Let's Encrypt.
+              </p>
+            </div>
+          </div>
+
+          <div class="project" role="gridcell" tabindex="0" aria-label="Parum Aqua projektas - spustelėkite detalėms">
+            <picture>
+              <source srcset="parum_aqua_mob.webp 1x, parum_aqua_mob@2x.webp 2x" type="image/webp">
+              <img 
+                src="parum_aqua_mob.png" 
+                alt="Parum Aqua Svetainė" 
+                width="800"
+                height="450"
+                loading="lazy"
+                class="project-image"
+              />
+            </picture>
+            <div class="project-description">
+              <h4>Parum Aqua - Vandentvarkos sprenimų svetainė</h4>
+              <p>Description: Šis projektas yra moderni, responsyvi internetinė svetainė, skirta vandentvarkos paslaugų įmonei "Parum Aqua". Sistema sukurta atstovauti profesionaliai vandentvarkos įmonei, kuri teikia vandentiekio, nuotekų sistemų, vandens kokybės tyrimų ir avarijų šalinimo paslaugas. Svetainė palaiko daugiakalbiškumą ir yra optimizuota visoms platformoms.</p>
+              <p><strong>Technologies:</strong> React 18, TypeScript, Vite, Tailwind CSS, Framer Motion, i18next, React Scroll, HTML5, CSS3.</p>
+              <p><strong>Highlights:</strong><br> 
+                - Moderni, responsive svetainės architektūra su animacijomis.<br>
+                - Daugiakalbiškumo palaikymas (lietuvių/anglų kalbos).<br>
+                - Interaktyvios animacijos naudojant Framer Motion.<br>
+                - Optimizuotas našumas su Vite build įrankiu.<br>
+                - Kontaktų forma su validacija ir automatiniais atsakymais.<br>
+                - SEO optimizuotas turinys ir meta duomenys.<br>
+                - Smooth scroll navigacija tarp sekcijų.<br>
+                - TypeScript tipo saugumas ir kodo kokybė.
+              </p>
+            </div>
+          </div>
+
+          <div class="project" role="gridcell" tabindex="0" aria-label="Sąskaitų apdorojimo įrankis - spustelėkite detalėms">
+            <picture>
+              <source srcset="pdf_tool.webp 1x, pdf_tool@2x.webp 2x" type="image/webp">
+              <img 
+                src="pdf_tool.png" 
+                alt="Sąskaitų apdorojimo įrankis" 
+                width="800"
+                height="450"
+                loading="lazy"
+                class="project-image"
+              />
+            </picture>
+            <div class="project-description">
+              <h4>Invoices tool</h4>
+              <p>Description: Šis projektas sukurtas automatizuoti PDF sąskaitų faktūrų apdorojimą ir duomenų ištraukimą. Sistema naudoja Azure Document Intelligence technologiją atpažinti ir ištraukti svarbius duomenis iš lietuviškų sąskaitų faktūrų.</p>
+              <p><strong>Technologies:</strong> Python, Flask, Azure Document Intelligence, SQLAlchemy, HTML, CSS, JavaScript.</p>
+              <p><strong>Highlights:</strong><br> 
+                - Automatinis duomenų ištraukimas iš PDF sąskaitų faktūrų.<br>
+                - Palaiko lietuviškas sąskaitas faktūras ir PVM apskaičiavimą.<br>
+                - Vartotojų autentifikacija ir administracijos skydelis.<br>
+                - Statistikos ir analitikos funkcionalumas.<br>
+                - JSON formato rezultatų eksportavimas.<br>
+                - Responsive dizainas, pritaikytas įvairiems įrenginiams.
+              </p>
+            </div>
+          </div>
+
+          <div class="project" role="gridcell" tabindex="0" aria-label="Fotografo portfolio projektas - spustelėkite detalėms">
+            <picture>
+              <source srcset="photografer.webp 1x, photografer@2x.webp 2x" type="image/webp">
+              <img 
+                src="photografer.png" 
+                alt="Fotografo portfolio svetainės dizainas" 
+                width="800"
+                height="450"
+                loading="lazy"
+                class="project-image"
+              />
+            </picture>
             <div class="project-description">
               <h4>Fotografijos Portfolio Svetainė</h4>
               <p>Aprašymas: Šis projektas sukurtas fotografui, siekiančiam demonstruoti savo darbus modernioje, patrauklioje svetainėje. Svetainė leidžia lengvai pridėti, valdyti ir peržiūrėti nuotraukas įvairiuose galerijos formatuose.</p>
@@ -164,8 +410,18 @@
             </div>
           </div>
           
-          <div class="project">
-            <img src="music_album.png" alt="Music albums" />
+          <div class="project" role="gridcell" tabindex="0" aria-label="Muzikos albumų duombazė - spustelėkite detalėms">
+            <picture>
+              <source srcset="music_album.webp 1x, music_album@2x.webp 2x" type="image/webp">
+              <img 
+                src="music_album.png" 
+                alt="Muzikos albumų duomenų bazės dizainas" 
+                width="800"
+                height="450"
+                loading="lazy"
+                class="project-image"
+              />
+            </picture>
             <div class="project-description">
               <h4>Muzikos albumų duombazė</h4>
               <p>Aprašymas: Projektas skirtas muzikos albumų ir atlikėjų duomenų bazei valdyti. Vartotojai gali ieškoti ir filtruoti albumus pagal žanrą, atlikėją ar metus. Svetainė demonstruoja serverio ir duomenų bazės valdymą naudojant Python bei SQL.</p>
@@ -177,8 +433,18 @@
             </div>
           </div>
 
-          <div class="project">
-            <img src="kasimo_darbai.png" alt="Kasimo paslaugu dizainas" />
+          <div class="project" role="gridcell" tabindex="0" aria-label="Kasimo paslaugų svetainė - spustelėkite detalėms">
+            <picture>
+              <source srcset="kasimo_darbai.webp 1x, kasimo_darbai@2x.webp 2x" type="image/webp">
+              <img 
+                src="kasimo_darbai.png" 
+                alt="Kasimo paslaugų dizainas" 
+                width="800"
+                height="450"
+                loading="lazy"
+                class="project-image"
+              />
+            </picture>
             <div class="project-description">
               <h4>Kasimo paslaugos svetainė</h4>
               <p>Aprašymas: Svetainė, skirta demonstruoti kasimo su traktoriumi paslaugas. Pabrėžiamos siūlomos paslaugos, pateikiamos kainos ir informacija, kaip susisiekti su paslaugų teikėju. Svetainė optimizuota siekiant patraukti vietinius klientus ir pagerinti SEO rezultatus.</p>
@@ -190,8 +456,18 @@
             </div>
           </div>
 
-          <div class="project">
-            <img src="calculator.png" alt="Calculator" />
+          <div class="project" role="gridcell" tabindex="0" aria-label="Skaičiuotuvas - spustelėkite detalėms">
+            <picture>
+              <source srcset="calculator.webp 1x, calculator@2x.webp 2x" type="image/webp">
+              <img 
+                src="calculator.png" 
+                alt="Skaičiuoklės dizainas" 
+                width="800"
+                height="450"
+                loading="lazy"
+                class="project-image"
+              />
+            </picture>
             <div class="project-description">
               <h4>Skaičiuotuvas</h4>
               <p>Aprašymas: Šis skaičiuotuvas sukurtas naudojant JavaScript, siekiant atlikti pagrindinius aritmetinius skaičiavimus. Projektas demonstruoja JavaScript galimybes kurti interaktyvias aplikacijas ir realaus laiko duomenų apdorojimą.</p>
@@ -207,23 +483,75 @@
       </div>
     </section>
 
+    <!-- Domenai Section -->
+    <section id="domenai" class="domains">
+      <div class="container">
+        <h2>Domenai</h2>
+        <div class="service-cards">
+          <div class="service-item">
+            <h3>Padarykite jį įsimintiną ir atpažįstamą</h3>
+            <p>
+              Pasirinkite vardą, kurį būtų lengva atsiminti, parašyti ir ištarti. Venkite skaičių ir brūkšnelių, kurie gali sukelti painiavą.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Pasirinkite tinkamą domenų plėtinį</h3>
+            <p>
+              Nors .com yra populiariausias, taip pat apsvarstykite kitus plėtinius kaip .io technologijoms ar .AI projektams, arba šalims būdingus kaip .lt ar .eu.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Patikrinkite prekės ženklo prieinamumą</h3>
+            <p>
+              Įsitikinkite, kad jūsų domenas nepažeidžia esamų prekės ženklų, kad išvengtumėte teisinių problemų. Ieškokite esamų prekės ženklų duomenų bazėse.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Mobiliems įrenginiams ir socialiniams tinklams pritaikytas</h3>
+            <p>
+              Patikrinkite, ar vardas prieinamas pagrindinėse socialinių tinklų platformose. Trumpesni vardai geriau tinka mobiliems ekranams ir socialinių tinklų paskyroms.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Apsvarstykite ilgalaikį naudojimą</h3>
+            <p>
+              Pasirinkite vardą, kuris augs kartu su jūsų verslu. Venkite tendencijų ar vardų, kurie gali pasensti.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Apsaugokite savo prekės ženklą</h3>
+            <p>
+              Apsvarstykite galimybę registruoti dažnus rašybos klaidų variantus ir skirtingus plėtinius, kad apsaugotumėte savo prekės ženklą ir išvengtumėte kybernetinio užgrobimo.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Domain CTA Button -->
+        <div class="domain-cta">
+          <a href="https://domainradar.lt/" target="_blank" class="cta-btn">
+            Valdykite savo domeną su Domain radar
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" aria-label="Kontaktų informacija ir forma">
       <div class="container">
         <h2>Susisiekite</h2>
         <div class="contact-info">
           
-          <a href="https://www.linkedin.com/in/mindaugas-zukauskas-06628b16/" target="_blank">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/mindaugas-zukauskas-06628b16/" target="_blank" aria-label="Susisiekite per LinkedIn (atsidaro naujame lange)">LinkedIn</a>
         </div>
 
         <!-- Contact Form -->
-          <form id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <input type="tel" name="phone" placeholder="Phone" required />
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-            <p id="form-result"></p> <!-- Čia bus rodomas rezultatas -->
+          <form id="contact-form" aria-label="Kontaktų forma">
+            <input type="text" name="name" placeholder="Your Name" required aria-label="Jūsų vardas" />
+            <input type="email" name="email" placeholder="Email" required aria-label="Elektroninio pašto adresas" />
+            <input type="tel" name="phone" placeholder="Phone" required aria-label="Telefono numeris" />
+            <textarea name="message" placeholder="Your Message" required aria-label="Jūsų žinutė"></textarea>
+            <button type="submit" aria-label="Siųsti kontaktų formą">Send</button>
+            <p id="form-result" aria-live="polite"></p> <!-- Čia bus rodomas rezultatas -->
           </form>
 
 
@@ -234,8 +562,6 @@
     <footer>
       <div class="footer-div">
         <p>&copy; 2024 IT with AI. Visos teisės saugomos.</p>
-        <p>El. paštas: <a href="mailto:info@itwithai.com">info@itwithai.com</a></p>
-        <p>Telefonas: +370 600 00000</p>
       </div>
     </footer>
     
@@ -252,5 +578,6 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+    </main>
   </body>
 </html>

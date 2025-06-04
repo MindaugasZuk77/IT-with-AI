@@ -1,0 +1,60 @@
+# robots.txt for itwithai.lt and itwithai.com
+# This file tells search engine crawlers which URLs they can access on your site.
+
+# Allow all crawlers access to all content
+User-agent: *
+Allow: /
+
+# Block access to admin areas (if any in the future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /__pycache__/
+
+# Block access to specific file types that shouldn't be indexed
+Disallow: *.php$
+Disallow: /send_email.php
+Disallow: /test_PHPMailer.php
+
+# Allow access to CSS and JS files for better rendering
+Allow: /styles.css
+Allow: /script.js
+Allow: /*.css$
+Allow: /*.js$
+
+# Allow access to images
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.gif$
+Allow: /*.svg$
+
+# Allow access to media files
+Allow: /*.mp4$
+Allow: /*.webm$
+
+# Sitemap locations for both domains
+Sitemap: https://itwithai.lt/sitemap.xml
+Sitemap: https://itwithai.com/sitemap.xml
+
+# Crawl delay to be respectful to servers (optional)
+# Crawl-delay: 1
+
+# Block specific bots if needed (uncomment if necessary)
+# User-agent: BadBot
+# Disallow: /
+
+# Allow Google Image bot to access images
+User-agent: Googlebot-Image
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.gif$
+Allow: /*.svg$
+
+# Allow Google Video bot to access videos
+User-agent: Googlebot-Video
+Allow: /*.mp4$
+Allow: /*.webm$ 

@@ -13,13 +13,48 @@ function closeMenu() {
   navLinks.classList.remove("active");
   overlay.classList.remove("active");
   document.body.classList.remove("menu-active");
+  // Update aria-expanded attribute
+  hamburger.setAttribute("aria-expanded", "false");
 }
 
-// Atidarome/uždarome hamburger meniu
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-  overlay.classList.toggle("active");
-  document.body.classList.toggle("menu-active");
+// Funkcija atidaryti hamburger meniu
+function openMenu() {
+  navLinks.classList.add("active");
+  overlay.classList.add("active");
+  document.body.classList.add("menu-active");
+  // Update aria-expanded attribute
+  hamburger.setAttribute("aria-expanded", "true");
+}
+
+// Funkcija toggle hamburger meniu
+function toggleMenu() {
+  if (navLinks.classList.contains("active")) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+}
+
+// Atidarome/uždarome hamburger meniu su pelės paspaudimu
+hamburger.addEventListener("click", toggleMenu);
+
+// Atidarome/uždarome hamburger meniu su klaviatūra (Enter arba Space)
+hamburger.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    toggleMenu();
+  }
+  // Escape key closes menu
+  if (e.key === "Escape") {
+    closeMenu();
+  }
+});
+
+// Global Escape key listener to close menu
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && navLinks.classList.contains("active")) {
+    closeMenu();
+  }
 });
 
 // Uždaryti meniu paspaudus overlay
@@ -73,17 +108,55 @@ mobileLanguageLinks.forEach((link) => {
 // Gauti visas korteles su klase "project"
 const projects = document.querySelectorAll(".project");
 
+// Funkcija toggle proyecto kortelės
+function toggleProject(project) {
+  // Jei kortelė jau aktyvi (su aprašymu), uždarome ją
+  if (project.classList.contains("active")) {
+    project.classList.remove("active");
+    project.setAttribute("aria-expanded", "false");
+  } else {
+    // Uždaryti kitas korteles
+    projects.forEach((p) => {
+      p.classList.remove("active");
+      p.setAttribute("aria-expanded", "false");
+    });
+    // Atidaryti dabartinę kortelę
+    project.classList.add("active");
+    project.setAttribute("aria-expanded", "true");
+  }
+}
+
 // Pridėti paspaudimo įvykį kiekvienai kortelei
-projects.forEach((project) => {
+projects.forEach((project, index) => {
+  // Add aria-expanded attribute
+  project.setAttribute("aria-expanded", "false");
+
+  // Mouse click event
   project.addEventListener("click", () => {
-    // Jei kortelė jau aktyvi (su aprašymu), uždarome ją
-    if (project.classList.contains("active")) {
+    toggleProject(project);
+  });
+
+  // Keyboard event support
+  project.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggleProject(project);
+    }
+    // Arrow key navigation between projects
+    if (e.key === "ArrowDown" || e.key === "ArrowRight") {
+      e.preventDefault();
+      const nextIndex = (index + 1) % projects.length;
+      projects[nextIndex].focus();
+    }
+    if (e.key === "ArrowUp" || e.key === "ArrowLeft") {
+      e.preventDefault();
+      const prevIndex = (index - 1 + projects.length) % projects.length;
+      projects[prevIndex].focus();
+    }
+    // Escape closes active project
+    if (e.key === "Escape" && project.classList.contains("active")) {
       project.classList.remove("active");
-    } else {
-      // Uždaryti kitas korteles
-      projects.forEach((p) => p.classList.remove("active"));
-      // Atidaryti dabartinę kortelę
-      project.classList.add("active");
+      project.setAttribute("aria-expanded", "false");
     }
   });
 });

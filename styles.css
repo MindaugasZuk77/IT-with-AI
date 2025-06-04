@@ -77,12 +77,53 @@ section {
   margin-bottom: 30px;
 }
 
+/* Domains Section - same styling as Services */
+.domains {
+  /* background-color: #1e1e1e; */
+  color: #f39c12;
+  text-align: center;
+}
+
+/* Domains grid container */
+.domains-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dvi kortelės eilutėje */
+  gap: 20px; /* Tarpas tarp kortelių */
+  max-width: 1200px; /* Maksimalus plotis, kad kortelės netaptų per plačios */
+  margin: 0 auto; /* Centruoja tinklelį */
+  padding: 0 20px; /* Atstumas nuo kraštų mažesniuose ekranuose */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .domains-grid {
+    grid-template-columns: 1fr; /* Viena kortelė eilutėje mažesniuose ekranuose */
+  }
+}
+
+.domains h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Domain CTA Button Container */
+.domain-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.domain-cta .cta-btn {
+  text-decoration: none;
+}
+
 /* Kortelių konteineris */
 .service-cards {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dvi kortelės eilutėje */
   gap: 20px; /* Tarpas tarp kortelių */
-  flex-wrap: wrap; /* Kad kortelės sulūžtų į kitą eilę, kai trūksta vietos */
+  max-width: 1200px; /* Maksimalus plotis, kad kortelės netaptų per plačios */
+  margin: 0 auto; /* Centruoja tinklelį */
+  padding: 0 20px; /* Atstumas nuo kraštų mažesniuose ekranuose */
 }
 
 /* Kiekviena paslaugos kortelė */
@@ -91,9 +132,16 @@ section {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(243, 156, 18, 0.5); /* Oranžinis švytėjimas */
-  flex: 1 1 30%; /* Kortelės užims 30% plotą dideliuose ekranuose */
-  max-width: 30%; /* Neleisti kortelėms būti didesnėms nei 30% */
   transition: transform 0.3s ease;
+  width: 100%; /* Užima visą plotį tinklelio langelyje */
+  box-sizing: border-box; /* Įskaitome padding į plotį */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .service-cards {
+    grid-template-columns: 1fr; /* Viena kortelė eilutėje mažesniuose ekranuose */
+  }
 }
 
 .service-item:hover {
@@ -172,9 +220,21 @@ section {
 /* Tinklelio stilius */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px; /* Tarpas tarp projektų */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
   align-items: stretch;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Vienas stulpelis mažesniems ekranams */
+@media (max-width: 767px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 0 15px;
+  }
 }
 
 /* Pagrindinė kortelė pritemdyta */
@@ -186,7 +246,10 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   filter: brightness(0.7); /* Pradinis pritemdymas */
   cursor: pointer; /* Žymiklis nurodantis, kad galima spustelėti */
-  max-height: 300px;
+  max-height: 400px; /* Increased max height */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Užvedus pelę, kortelė tampa ryški */
@@ -219,7 +282,8 @@ section {
 
 .project img {
   width: 100%;
-  height: auto;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the area */
   display: block;
 }
 
@@ -645,5 +709,109 @@ header nav {
 
   .language-switcher {
     margin-left: 20px;
+  }
+}
+
+/* ========================
+   ACCESSIBILITY & KEYBOARD NAVIGATION
+   ======================== */
+
+/* Focus indicators for better keyboard navigation */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+.project:focus,
+.hamburger:focus {
+  outline: 2px solid #f39c12;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.3);
+}
+
+/* Focus indicators for portfolio projects */
+.project:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(243, 156, 18, 0.8);
+}
+
+/* Hamburger menu focus state */
+.hamburger:focus {
+  background-color: rgba(243, 156, 18, 0.1);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+/* Navigation link focus states */
+.nav-links a:focus {
+  background-color: rgba(243, 156, 18, 0.2);
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: -5px -10px;
+}
+
+/* Skip to main content link (for screen readers) */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #f39c12;
+  color: #000;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 10000;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* Form focus improvements */
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border: 2px solid #f39c12;
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.3);
+}
+
+/* Improve button accessibility */
+button,
+.cta-btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:focus,
+.cta-btn:focus {
+  transform: scale(1.05);
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .project:focus {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+  }
+
+  button:focus,
+  a:focus {
+    outline: 3px solid #fff;
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .project:hover,
+  .project:focus,
+  button:hover,
+  button:focus {
+    transform: none;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

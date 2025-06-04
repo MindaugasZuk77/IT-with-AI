@@ -12,7 +12,143 @@
       content="IT services, web development, optimization, business consulting"
     />
     <meta name="author" content="Your Name" />
+    
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="IT with AI - Professional IT Services for Your Business" />
+    <meta property="og:description" content="We create high-quality, optimized websites and offer IT consultations to help your business grow and achieve its goals." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itwithai.com/index_en.html" />
+    <meta property="og:image" content="https://itwithai.com/logo-7.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="IT with AI" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="lt_LT" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IT with AI - Professional IT Services for Your Business" />
+    <meta name="twitter:description" content="We create high-quality, optimized websites and offer IT consultations to help your business grow and achieve its goals." />
+    <meta name="twitter:image" content="https://itwithai.com/logo-7.png" />
+    <meta name="twitter:site" content="@ITwithAI" />
+    <meta name="twitter:creator" content="@ITwithAI" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://itwithai.lt/index_en.html" />
+    
+    <!-- Alternate Language Links -->
+    <link rel="alternate" hreflang="en" href="https://itwithai.lt/index_en.html" />
+    <link rel="alternate" hreflang="lt" href="https://itwithai.lt/index_lt.html" />
+    <link rel="alternate" hreflang="x-default" href="https://itwithai.lt/index_lt.html" />
+    
     <title>IT with AI</title>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "IT with AI",
+      "description": "Professional IT services for small and medium businesses. Web development, optimization, and IT business development consulting.",
+      "url": "https://itwithai.com",
+      "logo": "https://itwithai.com/logo-7.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "areaServed": ["LT", "US", "GB"],
+        "availableLanguage": ["Lithuanian", "English"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "LT"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/mindaugas-zukauskas-06628b16/"
+      ],
+      "foundingDate": "2024",
+      "knowsAbout": [
+        "Web Development",
+        "IT Consulting", 
+        "SEO Optimization",
+        "Database Integration",
+        "Full Stack Development"
+      ],
+      "serviceArea": {
+        "@type": "Country",
+        "name": "Lithuania"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "IT with AI",
+      "description": "Professional IT services for small and medium businesses",
+      "url": "https://itwithai.com", 
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://itwithai.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": ["en", "lt"],
+      "copyrightYear": "2024",
+      "copyrightHolder": {
+        "@type": "Organization",
+        "name": "IT with AI"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Web Development and Maintenance",
+      "description": "We create professional, optimized and fast websites tailored to your business goals.",
+      "provider": {
+        "@type": "Organization",
+        "name": "IT with AI"
+      },
+      "areaServed": "Lithuania",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "IT Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Web Development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SEO Optimization"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "IT Consulting"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Database Integration"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
@@ -22,11 +158,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Skip to main content link for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Fixed navigation bar -->
     <header>
       <div class="logo">
         <a href="#home">
-          <img src="logo-7.png" alt="IT with AI Logo" />
+          <picture>
+            <source srcset="logo-7.webp 1x, logo-7@2x.webp 2x" type="image/webp">
+            <img 
+              src="logo-7.png" 
+              alt="IT with AI Logo" 
+              width="150"
+              height="50"
+            />
+          </picture>
         </a>
       </div>
       
@@ -36,6 +183,7 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#domains">Domains</a></li>
             <li><a href="#contact">Contact</a></li>
             <!-- Language switcher for small screens -->
             <li class="language-switcher-mobile">
@@ -65,7 +213,7 @@
           
           
           <!-- Hamburger Menu -->
-          <div id="hamburger" class="hamburger">
+          <div id="hamburger" class="hamburger" role="button" tabindex="0" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
             <span></span>
             <span></span>
             <span></span>
@@ -75,8 +223,8 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-      <video autoplay muted loop id="hero-background-video">
+    <section id="home" class="hero" aria-label="Main website section">
+      <video autoplay muted loop id="hero-background-video" aria-hidden="true">
         <source src="itwithAI_hero.mp4" type="video/mp4">
         <!-- Fallback for browsers that don't support video -->
         Your browser does not support the video tag.
@@ -86,14 +234,15 @@
         <p>
           We create high-quality, optimized websites and offer IT consultations to help your business grow and achieve its goals.
         </p>
-        <button class="cta-btn" id="contact-modal-btn">
+        <button class="cta-btn" id="contact-modal-btn" aria-label="Contact us now">
           Contact us now
         </button>
       </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <main id="main-content">
+    <section id="services" class="services" aria-label="Our services">
       <div class="container">
         <h2>Services</h2>
         <div class="service-cards">
@@ -140,19 +289,117 @@
             </p>
           </div>
           <!-- <div class="about-image">
-            <img src="team_image.png" alt="IT Specialist Photo" />
+            <img src="Apie 16 9.png" alt="IT Specialist Photo" />
           </div> -->
         </div>
       </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio" aria-label="Our project portfolio">
       <div class="container">
         <h2>Portfolio</h2>
-        <div class="gallery">
-          <div class="project">
-            <img src="photografer.png" alt="Photography Portfolio Website design" />
+        <div class="gallery" role="grid" aria-label="Projects gallery">
+
+          <div class="project" role="gridcell" tabindex="0" aria-label="DomainRadar project - click for details">
+            <picture>
+              <source srcset="domain_finder.webp 1x, domain_finder@2x.webp 2x" type="image/webp">
+              <img 
+                src="domain_finder.png" 
+                alt="DomainRadar - Domain Availability Checker" 
+                width="800"
+                height="450"
+                loading="lazy"
+                class="project-image"
+              />
+            </picture>
+            <div class="project-description">
+              <h4>DomainRadar - Professional Domain Availability Checker</h4>
+              <p>Description: This is an advanced domain availability checking solution built with React 18, TypeScript, and Node.js technologies. The system allows users to check domain availability, receive intelligent alternative suggestions, and stay updated with technology news. The project is production-ready and successfully deployed on Hostinger VPS with Nginx and PM2 configuration.</p>
+              <p><strong>Technologies:</strong> React 18, TypeScript, Node.js, Express.js, Vite, Tailwind CSS, Nginx, PM2, Let's Encrypt SSL, Google Analytics 4, Zod, Pino.</p>
+              <p><strong>Key Features:</strong><br> 
+                - Accurate domain checking with 100% precision using WHOIS protocol.<br>
+                - Smart alternative domain suggestions and recommendations.<br>
+                - Complete WHOIS data (registrar, registration/expiry dates).<br>
+                - Real-time technology news integration.<br>
+                - Modern, responsive design with smooth animations.<br>
+                - SEO optimized content with structured data.<br>
+                - Automated deployment scripts with PM2 process management.<br>
+                - Comprehensive Google Analytics tracking system.<br>
+                - Automatic SSL certificate setup with Let's Encrypt.
+              </p>
+            </div>
+          </div>
+
+          <div class="project" role="gridcell" tabindex="0" aria-label="Parum Aqua project - click for details">
+            <picture>
+              <source srcset="parum_aqua_mob.webp 1x, parum_aqua_mob@2x.webp 2x" type="image/webp">
+              <img 
+                src="parum_aqua_mob.png" 
+                alt="Parum Aqua Website" 
+                width="800"
+                height="450"
+                loading="lazy"
+                class="project-image"
+              />
+            </picture>
+            <div class="project-description">
+              <h4>Parum Aqua - Water Management Solutions Website</h4>
+              <p>Description: This project is a modern, responsive website designed for "Parum Aqua", a professional water management services company. The system was created to represent a professional water management company that provides water supply, sewerage systems, water quality testing, and emergency repair services. The website supports multilingualism and is optimized for all platforms.</p>
+              <p><strong>Technologies:</strong> React 18, TypeScript, Vite, Tailwind CSS, Framer Motion, i18next, HTML5, CSS3.</p>
+              <p><strong>Highlights:</strong><br> 
+                - Modern, responsive website architecture with animations.<br>
+                - Multilingual support (Lithuanian/English languages).<br>
+                - Interactive animations using Framer Motion.<br>
+                - Optimized performance with Vite build tool.<br>
+                - Contact form with validation and automated responses.<br>
+                - SEO optimized content and meta data.<br>
+                - Smooth scroll navigation between sections.<br>
+                - TypeScript type safety and code quality.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="project" role="gridcell" tabindex="0" aria-label="Invoice processing tool - click for details">
+            <picture>
+              <source srcset="pdf_tool.webp 1x, pdf_tool@2x.webp 2x" type="image/webp">
+              <img 
+                src="pdf_tool.png" 
+                alt="Invoice Processing Tool" 
+                width="800"
+                height="450"
+                loading="lazy"
+                class="project-image"
+              />
+            </picture>
+            <div class="project-description">
+              <h4>Invoices tool</h4>
+              <p>Description: This project was created to automate PDF invoice processing and data extraction. The system uses Azure Document Intelligence technology to recognize and extract important data from Lithuanian invoices.</p>
+              <p><strong>Technologies:</strong> Python, Flask, Azure Document Intelligence, SQLAlchemy, HTML, CSS, JavaScript.</p>
+              <p><strong>Highlights:</strong><br> 
+                - Automatic data extraction from PDF invoices.<br>
+                - Supports Lithuanian invoices and VAT calculations.<br>
+                - User authentication and admin dashboard.<br>
+                - Statistics and analytics functionality.<br>
+                - JSON format results export.<br>
+                - Responsive design suitable for various devices.
+              </p>
+            </div>
+          </div>
+
+          <div class="project" role="gridcell" tabindex="0" aria-label="Photography portfolio project - click for details">
+            <picture>
+              <source srcset="photografer.webp 1x, photografer@2x.webp 2x" type="image/webp">
+              <img 
+                src="photografer.png" 
+                alt="Photography Portfolio Website design" 
+                width="800"
+                height="450"
+                loading="lazy"
+                class="project-image"
+              />
+            </picture>
             <div class="project-description">
               <h4>Photography Portfolio Website</h4>
               <p>Description: This project was created for a photographer seeking to showcase their work in a modern and attractive website. The site allows easy addition, management and viewing of photos in various gallery formats.</p>
@@ -165,8 +412,18 @@
           </div>
           
          
-          <div class="project">
-            <img src="music_album.png" alt="Music Album Database design" />
+          <div class="project" role="gridcell" tabindex="0" aria-label="Music album database - click for details">
+            <picture>
+              <source srcset="music_album.webp 1x, music_album@2x.webp 2x" type="image/webp">
+              <img 
+                src="music_album.png" 
+                alt="Music Album Database design" 
+                width="800"
+                height="450"
+                loading="lazy"
+                class="project-image"
+              />
+            </picture>
             <div class="project-description">
               <h4>Music Album Database</h4>
               <p>Description: A project created to manage a database of music albums and artists. Users can search and filter albums by genre, artist or year. The website demonstrates server and database management using Python, SQL and Flask</p>
@@ -178,8 +435,18 @@
             </div>
           </div>
 
-          <div class="project">
-            <img src="kasimo_darbai.png" alt="Excavation Services Website design" />
+          <div class="project" role="gridcell" tabindex="0" aria-label="Excavation services website - click for details">
+            <picture>
+              <source srcset="kasimo_darbai.webp 1x, kasimo_darbai@2x.webp 2x" type="image/webp">
+              <img 
+                src="kasimo_darbai.png" 
+                alt="Excavation Services Website design" 
+                width="800"
+                height="450"
+                loading="lazy"
+                class="project-image"
+              />
+            </picture>
             <div class="project-description">
               <h4>Excavation Services Website</h4>
               <p>Description: A website designed to showcase excavation services with a tractor. The site highlights the services offered, provides pricing and includes contact information. The site is optimized to attract local clients and improve SEO rankings.</p>
@@ -191,8 +458,18 @@
             </div>
           </div>
 
-          <div class="project">
-            <img src="calculator.png" alt="Calculator design" />
+          <div class="project" role="gridcell" tabindex="0" aria-label="Calculator project - click for details">
+            <picture>
+              <source srcset="calculator.webp 1x, calculator@2x.webp 2x" type="image/webp">
+              <img 
+                src="calculator.png" 
+                alt="Calculator design" 
+                width="800"
+                height="450"
+                loading="lazy"
+                class="project-image"
+              />
+            </picture>
             <div class="project-description">
               <h4>Calculator</h4>
               <p>Description: This calculator was built using JavaScript to perform basic arithmetic calculations. The project demonstrates the capabilities of JavaScript in creating interactive applications and real-time data processing.</p>
@@ -209,24 +486,76 @@
       </div>
     </section>
 
+    <!-- Domains Section -->
+    <section id="domains" class="domains">
+      <div class="container">
+        <h2>Domains</h2>
+        <div class="service-cards">
+          <div class="service-item">
+            <h3>Make It Memorable & Brandable</h3>
+            <p>
+              Choose a name that is easy to remember, spell, and pronounce. Avoid numbers and hyphens that can cause confusion.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Choose the Right TLD</h3>
+            <p>
+              While .com is most popular, also consider other TLDs like .io for tech, or .AI projects, or country-specific ones like .uk or .de.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Check Trademark Availability</h3>
+            <p>
+              Ensure your domain doesn't infringe on existing trademarks to avoid legal issues. Search the USPTO database for existing trademarks.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Mobile-Friendly & Social Media Ready</h3>
+            <p>
+              Check if the name is available on major social platforms. Shorter names work better for mobile displays and social media handles.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Consider Long-Term Use</h3>
+            <p>
+              Choose a name that will grow with your business. Avoid trends or names that might become outdated.
+            </p>
+          </div>
+          <div class="service-item">
+            <h3>Protect Your Brand</h3>
+            <p>
+              Consider registering common misspellings and different TLDs to protect your brand and prevent cybersquatting.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Domain CTA Button -->
+        <div class="domain-cta">
+          <a href="https://domainradar.lt/" target="_blank" class="cta-btn">
+            Master your domain with Domain radar
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" aria-label="Contact information and form">
       <div class="container">
         <h2>Contact Us</h2>
         <div class="contact-info">
           
-          <a href="https://www.linkedin.com/in/mindaugas-zukauskas-06628b16/" target="_blank">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/mindaugas-zukauskas-06628b16/" target="_blank" aria-label="Contact via LinkedIn (opens in new window)">LinkedIn</a>
           
         </div>
 
           <!-- Contact Form (English version) -->
-          <form id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <input type="tel" name="phone" placeholder="Phone" required />
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-            <p id="form-result"></p> <!-- Čia bus rodomas rezultatas -->
+          <form id="contact-form" aria-label="Contact form">
+            <input type="text" name="name" placeholder="Your Name" required aria-label="Your name" />
+            <input type="email" name="email" placeholder="Email" required aria-label="Email address" />
+            <input type="tel" name="phone" placeholder="Phone" required aria-label="Phone number" />
+            <textarea name="message" placeholder="Your Message" required aria-label="Your message"></textarea>
+            <button type="submit" aria-label="Send contact form">Send</button>
+            <p id="form-result" aria-live="polite"></p> <!-- Čia bus rodomas rezultatas -->
           </form>
 
 
@@ -236,9 +565,7 @@
     <!-- Footer -->
     <footer>
       <div class="footer-div">
-        <p>&copy; 2024 IT with AI. All rights reserved.</p>
-        <!-- <p>Email: <a href="mailto:info@itwithai.com">info@itwithai.com</a></p> -->
-        <!-- <p>Phone: +370 600 00000</p> -->
+        <p>&copy; 2025 IT with AI. All rights reserved.</p>
       </div>
     </footer>
     
@@ -253,5 +580,6 @@
 
     <!-- JavaScript -->
     <script src="script.js"></script>
+    </main>
   </body>
 </html>
