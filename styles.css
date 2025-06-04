@@ -752,18 +752,30 @@ textarea:focus,
 /* Skip to main content link (for screen readers) */
 .skip-link {
   position: absolute;
-  top: -40px;
-  left: 6px;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
   background: #f39c12;
   color: #000;
   padding: 8px;
   text-decoration: none;
   border-radius: 4px;
   z-index: 10000;
+  overflow: hidden;
 }
 
 .skip-link:focus {
+  position: absolute;
+  left: 6px;
   top: 6px;
+  width: auto;
+  height: auto;
+  padding: 8px;
+  background: #f39c12;
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  overflow: visible;
 }
 
 /* Form focus improvements */
