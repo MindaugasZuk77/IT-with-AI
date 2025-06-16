@@ -34,9 +34,10 @@ Allow: /*.svg$
 Allow: /*.mp4$
 Allow: /*.webm$
 
-# Sitemap locations for both domains
+# Sitemap location for primary domain (.lt)
 Sitemap: https://itwithai.lt/sitemap.xml
-Sitemap: https://itwithai.com/sitemap.xml
+
+# Note: .com domain redirects to .lt domain via .htaccess
 
 # Crawl delay to be respectful to servers (optional)
 # Crawl-delay: 1

@@ -1,0 +1,15 @@
+# robots.txt for itwithai.com (redirects to itwithai.lt)
+# This domain redirects all traffic to itwithai.lt
+
+User-agent: *
+# Allow crawlers but inform them about the canonical domain
+Allow: /
+
+# Redirect notice for crawlers
+# This domain permanently redirects to https://itwithai.lt/
+
+# Primary sitemap location (on main domain)
+Sitemap: https://itwithai.lt/sitemap.xml
+
+# Crawl delay to be respectful
+Crawl-delay: 1 
